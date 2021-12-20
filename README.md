@@ -23,7 +23,7 @@ En este trabajo desarrollamos la implementación de una red neuronal autoencoder
 
 ## Contenido.
 
-  ###1.1. Selección de variables.
+  ### 1.1. Selección de variables.
   Esta etapa determina el poder predictivo del modelo debido a que genera mayor eficacia a la hora del entrenamiento, en principio, se debe escoger la mínima cantidad de  variables siguiendo el principio de parsimonia.  En la disponibilidad de variables para el proyecto se emplearon las siguientes:
   
       * P_SEXO: Sexo.
@@ -38,23 +38,46 @@ En este trabajo desarrollamos la implementación de una red neuronal autoencoder
       * UVA2_CODTER: Código de territorialidad étnica.
       * PA1_GRP_ETNIC: Reconocimiento étnico – Variable de respuesta.
       
-   ###1.2. Balanceo de categorías.
+   ### 1.2. Balanceo de categorías.
    En el proyecto se hizo enfasís en la población afrodescendiente, observardo la distribución de categorías en la variable de respuesta se determinó que presentaba un           desbalance, una proporción de alrededor del 7% del conjunto total de datos (Censo de población nacional y vivienda 2018).  para balancear las categorías se extrajo una muestra aleatoria de la misma cantidad de afrodescedientes del resto de los índividuos pertenecientes a las otras categorías (autoreconocimiento étnico).
    
-   ###2.1. Entrenamiento de la red neuronal autoencoder. 
+   ### 2.1. Entrenamiento de la red neuronal autoencoder. 
    En esta primera red tenemos una función de activación relu, con 100 épocas y 100 lotes, con 1141 neuronas en la capa superior, y en las capas ocultas tenemos 500, 300 y 10 neuronas. estos hiperparametros fueron escogidos ya que después de haber realizado el procedimiento muchas veces fueron los valores que tuvieron una muy buena precisión.
 
   como se observa en este primer modelo se obtiene una precisión del 45% lo cual no nos pareció la mejor opción, también nos damos cuenta que según la matriz de confusión no esta clasificando bien, ya que tiene un recall de 6.5 %, es decir que clasifica a menos personas afros cuando en realidad son afros, lo cual hace que descartamos este modelo y continuemos viendo para el segundo modelo.
-
+  
 ![Autoencoder](https://user-images.githubusercontent.com/78028496/146802129-b661592c-0fa7-4507-8f4a-119fae5037fa.png)
 
-###2.2. Red neuronal densa.
+### 2.2. Red neuronal densa.
 Una alternativa ha sido entrenar una red neuronal densa para la predicción del autoreconocimiento étnico específicamente la categoría afrodecendiente, la estructura de la red esta compuesta por 1138 neuronas de entrada, dos capas intermedias de 600 neuronas y una capa de 2 neuronas de salida que permitirá identificar la respuesta binaria de la predicción, donde 1 el individuo fue clasificado como afrodescendiente y 0 no afrodescendiente.
 
 En el assessment del modelo se utilizó un 70% del conjunto de datos para entrenamiento y un 30% para evaluación, se observó que el accuracy del entrenamiento y evaluación estaban muy cercanos, es decir, reflejando un buen ajuste.
 
+![red densa 1](https://user-images.githubusercontent.com/78028496/146804503-6aa280a5-94d9-45ac-b147-e6f2697f7921.png)
+
+En la evaluación del modelo se obtiene un “accuracy” del 57% (porcentaje total de aciertos en el modelo), se debe resaltar que el modelo presenta una sensibilidad del 69 %,
+es decir, logra identificar el 69% de los individuos que se autor reconocieron como afrodescendientes en el conjunto de datos de evaluación.
+
+![Red densa 2](https://user-images.githubusercontent.com/78028496/146804242-bb33e63a-a902-4105-b969-adc54de18bc2.png)
+
+el modelo identifica 608.746 individuos que se reconocieron como afrodescendientes frente a un total de 885.429 afrodescendientes que contenía el conjunto de datos de evaluación, sin embargo, hay 483.407 individuos que el modelo clasifica de manera errónea afirmando que son afrodescendientes, de aquí se identifica el 62% de los casos identificados por el modelo corresponden a la realidad.
+
+![red densa 3](https://user-images.githubusercontent.com/78028496/146804305-85f93d14-5545-4373-8e4e-1aedc92ae4db.png)
+  
+La prueba ROC que permite determinar la capacidad discriminatoria del clasificador según el área bajo la curva; mientras mayor sea más poder discriminatorio tendrá el clasificador. Esta área puede interpretarse como la probabilidad de que, ante un par de individuos, uno que se auto reconozca afrodescendiente y el otro no, el modelo los clasifique correctamente.
 
 
+
+Equipo RNAE - DANE
+
+Juan Pablo Paez - jppaezg@unal.edu.co 
+
+Steven Cifuentes - stevencifuentes@gmail.com
+
+
+  
+  
+  
 
 
 
