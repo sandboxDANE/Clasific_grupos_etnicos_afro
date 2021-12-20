@@ -1,3 +1,6 @@
+![Logo-DANE-color-2019](https://user-images.githubusercontent.com/78028496/146801129-8f1da309-063e-4071-b12e-4e876c41fb59.jpg)
+
+
 # Red neuronal para la clasificación de individuos en grupos étnicos para el censo poblacional de Colombia 2018.
 
 ## Introducción.
@@ -20,9 +23,8 @@ En este trabajo desarrollamos la implementación de una red neuronal autoencoder
 
 ## Contenido.
 
-  1.1 Selección de variables.
-  Esta etapa determina el poder predictivo del modelo debido a que genera mayor eficacia a la hora del entrenamiento, en principio, se debe escoger la mínima cantidad de         
-  variables siguiendo el principio de parsimonia.  En la disponibilidad de variables para el proyecto se emplearon las siguientes:
+  1.1. Selección de variables.
+  Esta etapa determina el poder predictivo del modelo debido a que genera mayor eficacia a la hora del entrenamiento, en principio, se debe escoger la mínima cantidad de  variables siguiendo el principio de parsimonia.  En la disponibilidad de variables para el proyecto se emplearon las siguientes:
   
       * P_SEXO: Sexo.
       * PA11_COD_ETNIA: Pueblo indígena de pertenencia.
@@ -36,11 +38,9 @@ En este trabajo desarrollamos la implementación de una red neuronal autoencoder
       * UVA2_CODTER: Código de territorialidad étnica.
       * PA1_GRP_ETNIC: Reconocimiento étnico – Variable de respuesta.
       
-   1.2 Balanceo de categorías.
-   En el proyecto se hizo enfasís en la población afrodescendiente, observardo la distribución de categorías en la variable de respuesta se determinó que presentaba un        
-   desbalance, una proporción de alrededor del 7% del conjunto total de datos (Censo de población nacional y vivienda 2018).  para balancear las categorías se extrajo una 
-   muestra aleatoria de la misma cantidad de afrodescedientes del resto de los índividuos pertenecientes a las otras categorías (autoreconocimiento étinco).
-   
-   2. Entrenamiento de la red neuronal autoencoder.
-   En esta primera red tenemos una función de activación relu, con 100 épocas y 100 lotes,con 1141 neuronas en la capa superior, y en las capas ocultas tenemos 500, 300 y 10   
-   neuronas. estos hiperparametros fueron escogidos ya que después de haber realizado el procedimiento muchas veces fueron los valores que tuvieron una muy buena precisión.
+   1.2. Balanceo de categorías.
+   En el proyecto se hizo enfasís en la población afrodescendiente, observardo la distribución de categorías en la variable de respuesta se determinó que presentaba un        desbalance, una proporción de alrededor del 7% del conjunto total de datos (Censo de población nacional y vivienda 2018).  para balancear las categorías se extrajo una muestra aleatoria de la misma cantidad de afrodescedientes del resto de los índividuos pertenecientes a las otras categorías (autoreconocimiento étnico).
+
+2. Entrenamiento de la red neuronal autoencoder. 
+En esta primera red tenemos una función de activación relu, con 100 épocas y 100 lotes, con 1141 neuronas en la capa superior, y en las capas ocultas tenemos 500, 300 y 10 neuronas. estos hiperparametros fueron escogidos ya que después de haber realizado el procedimiento muchas veces fueron los valores que tuvieron una muy buena precisión.
+
