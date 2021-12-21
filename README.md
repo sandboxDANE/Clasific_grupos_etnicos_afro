@@ -37,7 +37,9 @@ En este trabajo desarrollamos la implementación de una red neuronal autoencoder
       * UVA1_TIPOTER: Tipo de territorialidad étnica.
       * UVA2_CODTER: Código de territorialidad étnica.
       * PA1_GRP_ETNIC: Reconocimiento étnico – Variable de respuesta.
-      
+   
+   Puede acceder al conjunto de datos [aqui](https://github.com/sandboxDANE/Clasific_grupos_etnicos_afro/issues/9#issue-1086088821).
+   
    ### 1.2. Balanceo de categorías.
    En el proyecto se hizo enfasís en la población afrodescendiente, observardo la distribución de categorías en la variable de respuesta se determinó que presentaba un           desbalance, una proporción de alrededor del 7% del conjunto total de datos (Censo de población nacional y vivienda 2018).  para balancear las categorías se extrajo una muestra aleatoria de la misma cantidad de afrodescedientes del resto de los índividuos pertenecientes a las otras categorías (autoreconocimiento étnico).
    
