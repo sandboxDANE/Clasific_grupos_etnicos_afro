@@ -68,7 +68,7 @@ el modelo identifica 608.746 individuos que se reconocieron como afrodescendient
   
 La prueba ROC que permite determinar la capacidad discriminatoria del clasificador según el área bajo la curva; mientras mayor sea más poder discriminatorio tendrá el clasificador. Esta área puede interpretarse como la probabilidad de que, ante un par de individuos, uno que se auto reconozca afrodescendiente y el otro no, el modelo los clasifique correctamente.
 
-en el siguiente link puede consultar el [documento metodológico](https://github.com/sandboxDANE/Clasific_grupos_etnicos_afro/issues/11#issue-1086091053)
+En el siguiente link puede consultar el [documento metodológico](https://github.com/sandboxDANE/Clasific_grupos_etnicos_afro/issues/11#issue-1086091053) y los [algoritmos](https://github.com/sandboxDANE/Clasific_grupos_etnicos_afro/issues/12#issue-1086099903) creados para entrenar las redes neuronales.
 
 El proyecto se ejecutó en entorno distribuido lenguaje python, con los servicios de azure, las librerias de sparkML y keras en databricks.
 
