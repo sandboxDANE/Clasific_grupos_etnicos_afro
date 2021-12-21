@@ -24,7 +24,7 @@ En este trabajo desarrollamos la implementación de una red neuronal autoencoder
 ## Contenido.
 
   ### 1.1. Selección de variables.
-  Esta etapa determina el poder predictivo del modelo debido a que genera mayor eficacia a la hora del entrenamiento, en principio, se debe escoger la mínima cantidad de  variables siguiendo el principio de parsimonia.  En la disponibilidad de variables para el proyecto se emplearon las siguientes:
+  Esta etapa determina el poder predictivo del modelo debido a que genera mayor eficacia a la hora del entrenamiento, en principio, se debe escoger la mínima cantidad de  variables siguiendo el principio de parsimonia.  En la disponibilidad de [variables](https://github.com/sandboxDANE/Clasific_grupos_etnicos_afro/issues/10#issue-1086090693) para el proyecto se emplearon las siguientes:
   
       * P_SEXO: Sexo.
       * PA11_COD_ETNIA: Pueblo indígena de pertenencia.
