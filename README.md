@@ -55,13 +55,12 @@ Una alternativa ha sido entrenar una red neuronal densa para la predicción del 
 
 En el assessment del modelo se utilizó un 70% del conjunto de datos para entrenamiento y un 30% para evaluación, se observó que el accuracy del entrenamiento y evaluación estaban muy cercanos, es decir, reflejando un buen ajuste.
 
-![red densa 1](https://user-images.githubusercontent.com/78028496/146804503-6aa280a5-94d9-45ac-b147-e6f2697f7921.png)
 ![aa](https://user-images.githubusercontent.com/78028496/147144464-496b06a2-7752-42cb-9c0e-20eb1c29280b.png)
 
 En la evaluación del modelo se obtiene un “accuracy” del 57% (porcentaje total de aciertos en el modelo), se debe resaltar que el modelo presenta una sensibilidad del 69 %,
 es decir, logra identificar el 69% de los individuos que se autor reconocieron como afrodescendientes en el conjunto de datos de evaluación.
 
-![Red densa 2](https://user-images.githubusercontent.com/78028496/146804242-bb33e63a-a902-4105-b969-adc54de18bc2.png)
+![confu](https://user-images.githubusercontent.com/78028496/147144703-9c659742-de03-4028-9da3-dfef9ebfe765.png)
 
 el modelo identifica 608.746 individuos que se reconocieron como afrodescendientes frente a un total de 885.429 afrodescendientes que contenía el conjunto de datos de evaluación, sin embargo, hay 483.407 individuos que el modelo clasifica de manera errónea afirmando que son afrodescendientes, de aquí se identifica el 62% de los casos identificados por el modelo corresponden a la realidad.
 
